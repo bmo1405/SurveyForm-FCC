@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<link href="Formulário.css" rel="stylesheet" type="text/css">
+<html>
+
+<body>
+  <main id="all">
+    <div class="top">
+      <h1 id="title">Pesquisa de Opinião</h1>
+      <p id="description">Precisamos saber as necessidades de nossos clientes, responda este questionário com
+        sinceridade</p>
+    </div>
+    <div id="form">
+      <form formaction="coleta.informação" id="survey-form">
+        <div id="start">
+          <label id="name-label" for="Nome">
+            Nome completo:<br>
+            <input id="name" class="text" type="text" name="Nome" alt="Insira seu nome aqui"
+              placeholder="Insira seu nome aqui" required />
+            <br>
+          </label>
+          <label id="email-label" for="Email">
+            Email:<br>
+            <input id="email" class="text" type="email" name="Email" alt="Insira seu email aqui"
+              placeholder="exemplo@gmail.com" required />
+            <br>
+          </label>
+          <label id="number-label" for="Idade">
+            Idade:<br>
+            <input id="number" class="text" type="number" name="Idade" alt="Insira sua idade"
+              placeholder="Insira sua idade aqui" min="16" max="99" required />
+            <br>
+          </label>
+        </div>
+        <label id="dropdown-label" for="niv-esc">
+          Nível de escolaridade:<br>
+          <select id="dropdown" name="niv-esc" required>
+            <option value="ef-completo">Ensino Fundamental completo</option>
+            <option value="em-completo">Ensino Médio completo</option>
+            <option value="es-completo">Ensino Superior completo</option>
+            <option value="ndizer">Prefiro não dizer</option>
+          </select>
+          <br>
+        </label>
+        <div id="radio">
+          Você recomendaria a loja para um amigo?<br>
+          <div id="buttons">
+            <section>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Com certeza" value="comctz" checked />Com certeza
+              </label>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Provavelmente sim" value="provs" />Provavelmente sim
+              </label>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Talvez" value="talvez" />Talvez
+              </label>
+            </section>
+            <section>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Não sei" value="nsei" />Não sei
+              </label>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Provavelmente não" value="provn" />Provavelmente não
+              </label>
+              <label class="radio">
+                <input name="recomendacao" type="radio" alt="Definitivamente não" value="defn" />Definitivamente não
+              </label>
+            </section>
+          </div>
+        </div>
+        <div id="checkbox-set">
+          Selecione os produtos que você mais compra na loja:
+          <br>
+          <div class="flex-check">
+            <section>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Capinhas" value="capinha" />Capinhas de celular
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Películas" value="pelicula" />Películas
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Pilhas e Baterias" value="pilbat" />Pilhas e Baterias
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Brinquedos" value="brinquedo" />Brinquedos
+              </label>
+            </section>
+            <section>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Jóias" value="joias" />Jóias
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Material Escolar" value="matesc" />Material Escolar
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Perfumes" value="perfume" />Perfumes
+              </label>
+              <label class="checkbox">
+                <input name="produtos" type="checkbox" alt="Roupas" value="roupas" />Roupas
+              </label>
+            </section>
+          </div>
+        </div>
+        <br>
+        <label for="comment">
+          Ouça o que o seu coração tem a dizer <span>(e digite abaixo)</span>:
+          <br>
+          <div id="margem-aaaa">
+            <textarea id="comenario" name="Comentário" alt="Comentários adicionais"
+              placeholder="Insira suas sugestões aqui"></textarea>
+          </div>
+        </label>
+        <br>
+        <button id="submit" type="submit">
+          Enviar
+        </button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
